@@ -29,6 +29,13 @@ public class Romain {
 			parler("J'abandonne...");
 
 		}
+		
+	}
+	
+	public static void main(String[] args) {
+		Romain minus= new Romain("minus",6);
+		minus.parler("Bonjour");
+		minus.recevoirCoup(5);
 	}
 
 }
