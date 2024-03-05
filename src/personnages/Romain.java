@@ -22,6 +22,7 @@ public class Romain {
 	}
 
 	public void recevoirCoup(int forceCoup) {
+		assert force>0 ;                                            //j'me suis arreter ici
 		force -= forceCoup;
 		if (force > 0) {
 			parler("Aïe");
@@ -33,7 +34,7 @@ public class Romain {
 	}
 	
 	public static void main(String[] args) {
-		Romain minus= new Romain("minus",6);
+		Romain minus= new Romain("minus",-6);
 		minus.parler("Bonjour");
 		minus.recevoirCoup(5);
 	}
